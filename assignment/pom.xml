@@ -101,6 +101,9 @@
                 <suiteXmlFiles>
                     <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
+                <includes>
+                    <include>**/*Test.java</include>
+                </includes>
             </configuration>
         </plugin>
         <plugin>
