@@ -58,5 +58,5 @@ Each test class contains a test method marked with `@Test`.
 There is an issue I'm encountering with running via mvn test and the tests are not being recognized.
 Despite the following:
 - Test classes are correctly annotated with `@Test`.
-- The `testng.xml` is correctly pointing to your test classes.
-- Maven dependencies are correctly installed by running `mvn clean install`.
+- The `testng.xml` is pointing to the test classes.
+- Maven dependencies are installed by running `mvn clean install`.
