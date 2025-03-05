@@ -1,6 +1,5 @@
 package com.omar.tests;
 
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -10,7 +9,7 @@ import com.omar.util.ApiUtils;
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
 
-public class tApiTest {
+public class RestAssuredReqresTest {
 
     private static String userId;
 

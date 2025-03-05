@@ -1,0 +1,4 @@
+com\omar\tests\SeleniumAmazonTest.class
+com\omar\base\BaseTest.class
+com\omar\pageObjects\AmazonStore.class
+com\omar\tests\RestAssuredReqresTest.class

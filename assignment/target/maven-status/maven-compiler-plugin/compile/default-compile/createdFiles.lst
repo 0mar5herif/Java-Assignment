@@ -1,1 +1,3 @@
 com\omar\App.class
+com\omar\config\Config.class
+com\omar\util\ApiUtils.class

@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.omar.base.BaseTest;
 import com.omar.pageObjects.AmazonStore;
 
-public class AmazonStoreTest extends BaseTest {
+public class SeleniumAmazonTest extends BaseTest {
 
     @Test
     public void amazonShoppingTest() throws InterruptedException {
@@ -45,6 +45,7 @@ public class AmazonStoreTest extends BaseTest {
         WebElement cartIcon = driver.findElement(By.xpath("//div[contains(@id, 'nav-cart-count') and not(contains(@id, 'text'))]"));
         actions.moveToElement(cartIcon).click().perform();
         int totalPrice = amazon.getTotalPrice();
+        Thread.sleep(1000);
         amazon.verifyTotalAmount(totalPrice);
         // need to get total and compare to subtotal
         // Thread.sleep(1000);
