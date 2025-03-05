@@ -34,7 +34,6 @@
       <artifactId>junit-jupiter-api</artifactId>
       <scope>test</scope>
     </dependency>
-    <!-- Optionally: parameterized tests support -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
@@ -64,14 +63,19 @@
         <groupId>io.rest-assured</groupId>
         <artifactId>rest-assured</artifactId>
         <version>5.5.1</version>
-        <scope>test</scope>
     </dependency>
     <dependency>
         <groupId>io.rest-assured</groupId>
         <artifactId>json-path</artifactId>
         <version>5.5.1</version>
+        <scope>test</scope>
     </dependency>
-  </dependencies>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.18.3</version>
+    </dependency>
+</dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -93,6 +97,11 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.3.0</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>src/test/resources/testing.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
